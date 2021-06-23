@@ -1,4 +1,4 @@
 a:link { color: blue; }
 a:visited { color: blueviolet; }
 a:not([name]):hover { color: orange; }
-/* :not([name])と:hoverが逆転させるとChrome上では望み通りに適応されない */
+/* :not([name])と:hoverを逆転させるとChrome上では望み通りに適応されない */
