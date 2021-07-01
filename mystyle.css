@@ -8,6 +8,9 @@ a:not([name]):hover{
 	color: orange;
 }
 /* :not([name])と:hoverを逆転させるとChrome上では望み通りに適応されない */
+.foot_note p{
+	font-size:0.8em;
+}
 .beamer{
 	position:relative;
 	width:600;
