@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset='utf-8'>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>joeyojiのホームページ</title>
+<title>TRPG</title>
 <link rel="stylesheet"
       type="text/css"
       href="mystyle.css">
@@ -12,18 +13,22 @@
 <link rel="icon" href="ICONimg/octocat96.png" size="96x96">
 <link rel="icon" href="ICONimg/octocat144.png" size="144x144">
 <script language="javascript" src="pane.js"></script>
+<script language="javascript" src="game.js"></script>
 </head>
 <body>
 <script>header();</script>
 <div class="main">
-<h1>joeyojiのホームページ</h1>
-<p>joeyojiのホームページです.</p>
+<h1>TRPG</h1>
+a:<input id="i0" value="3"/>
+b:<input id="i1" value="5"/>
+<button onclick="check()">check</button>
 <ul>
-	<li><p><em><a href="docs.html">ドキュメント</a></em><br>
-		自身が過去にまとめたドキュメントを掲載しております.
-		</p></li>
-	<li><p><em><a href="trpg.html">TRPG</a></em><br>
-		</p></li>
+	<li>a==b:<span id="r0"></span></li>
+	<li>a!=b:<span id="r1"></span></li>
+	<li>a&lt;b:<span id="r2"></span></li>
+	<li>a&gt;b:<span id="r3"></span></li>
+	<li>a&leq;b:<span id="r4"></span></li>
+	<li>a&geq;b:<span id="r5"></span></li>
 </ul>
 </div>
 <script>footer();</script>
