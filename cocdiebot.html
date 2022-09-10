@@ -2,7 +2,7 @@
 <head>
 <meta charset='utf-8'>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>cocdiebot使い方</title>
+<title>cocdiebot利用説明</title>
 <link rel="stylesheet"
       type="text/css"
       href="mystyle.css">
@@ -16,8 +16,25 @@
 <body>
 <script>header();</script>
 <div class="main">
-<h1>COCDIEBOT使い方</h1>
+<h1>COCDIEBOT利用説明</h1>
+<hr>
+<h3>サーバー招待からキャラ登録まで</h3>
+<ol>
+<li><a href="https://discord.com/oauth2/authorize?client_id=1010123356579823616&permissions=268443664&scope=bot">ここ</a>からCOCDIEBOTをdiscordサーバーに招待する。<br>
+　導入時に要求される権限は全て許可してください。</li>
+<li>招待したサーバーの任意のチャンネルでコマンド$initを実行する。<br>
+　これによりシークレットダイスを確認できる"#シークレットリザルト"と、<br>
+　BOTが探索者のデータを読み込むための"#探索者置き場"の２つのチャンネルが作成されます。</li>
+<li><a href="https://iachara.com/">いあきゃら</a>で(７版)キャラを作成し、ココフォリア駒出力をし、クリップボードにコピーする。<br>
+　ダイスはCCで指定してください。</li>
+<li>テキストエディタなどを開いてコピーされたものを貼り付けしtxtファイルで保存する。</li>
+<li>保存されたtxtファイルをコマンド$registerとともにdiscordサーバーにアップロードする。<br>
+　これにより探索者置き場にキャラが登録されます。</li>
+</ol>
 </div>
+<hr>
+<h3>コマンド一覧</h3>
+
 <script>footer();</script>
 </body>
 </html>
