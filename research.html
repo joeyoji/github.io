@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ドキュメント</title>
+<link rel="stylesheet"
+      type="text/css"
+      href="mystyle.css">
+<link rel="icon" href="ICONimg/octocat.ico" type="image/x-icon">
+<link rel="icon" href="ICONimg/octocat32.png" size="32x32">
+<link rel="icon" href="ICONimg/octocat48.png" size="48x48">
+<link rel="icon" href="ICONimg/octocat96.png" size="96x96">
+<link rel="icon" href="ICONimg/octocat144.png" size="144x144">
+<script language="javascript" src="pane.js"></script>
+</head>
+<body>
+<script>header();</script>
+<div class="main">
+<h1>研究</h1>
+<p>このページは自身が過去に研究したものをまとめております.
+研究対象は主にベイズ統計の為の代数幾何です．</p>
+<ol>
+	<li><p><em><a href="https://ken.ieice.org/ken/paper/202303039CRv/">
+	多項式の多重指数に関する線形計画問題に基づく実対数閾値の上界</a></em>(2022~2023)<br>
+	統計モデルの実対数閾値を考察する際，平均誤差関数と等価な多項式を用意して<br>
+	その特異点構造を考察するのが一般的ですが，これは統計モデルごとに異なるため<br>
+	従来までは一般的な実対数閾値の公式がありませんでした。そこで本研究は<br>
+	多項式の多重指数に関する線形計画問題の最適解の逆数が実対数閾値の上界を<br>
+	与える事を示しました．これにより平均誤差関数と等価な多項式を用意できれば<br>
+	統計モデルの汎化損失の上界を求めることが比較的簡単に出来るようになりました。
+		</p></li>
+	<li><p><em><a href="https://ken.ieice.org/ken/paper/20220308ZCJ2/">
+	入力が低次元超平面上にあるときの縮小ランク回帰の実対数閾値</a></em>(2021~2022)<br>
+	縮小ランク回帰とは，三層神経回路網において活性化関数を恒等関数にしたものと等価で，<br>
+	特に中間層を入力層と出力層よりも少なくした（ランクを縮小した）線型写像のことです．<br>
+	既存研究では入力がフルランク（次元いっぱいにデータが散らばっている）事を仮定した<br>
+	場合の実対数閾値（汎化誤差を与える不変量）が分かっていましたが，本研究において<br>
+	入力の制限を撤廃した一般の場合において結果を拡張しました。これにより縮小ランク回帰に<br>
+	ベイズ推測を適用する場合には，入力データが実質的な分布よりも冗長であっても，<br>
+	汎化損失は増大しないことが分かりました。
+	</p></li>
+	<li><p><em>混合ポアソン分布の相転移現象の実験的解明</em>(2020~2021)<br>
+	混合ポアソン分布とは，複数のポアソン分布を確率的に混合したものです。ベイズ推測において<br>
+	事前分布のハイパーパラメータを変化させたとき，事後分布が急激に変化する現象を相転移現象<br>
+	といいますが，混合ポアソン分布においては限定的なケースしか理論的に解明されていませんでした．<br>
+	本研究では，マルコフ連鎖モンテカルロ法を用いた混合ポアソン分布の学習実験を行うことで，<br>
+	理論的に未解明なケースに対して相転移がどこで起きるかを調べました。これにより理論的に解明<br>
+	されているケースでは存在しなかった２回以上の相転移の可能性があるケースを発見しました。
+	</p></li>
+</ol>
+</div>
+<script>footer();</script>
+</body>
+</html>
